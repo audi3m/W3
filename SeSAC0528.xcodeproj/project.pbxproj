@@ -19,6 +19,12 @@
 		D4228C622C0563AA00EC924A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C612C0563AA00EC924A /* HomeViewController.swift */; };
 		D4228C642C0563B400EC924A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C632C0563B400EC924A /* SearchViewController.swift */; };
 		D4228C662C0563BB00EC924A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C652C0563BB00EC924A /* SettingsViewController.swift */; };
+		D4228C692C0565B300EC924A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C682C0565B300EC924A /* UIViewController+Extension.swift */; };
+		D4228C6D2C0579F900EC924A /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C6B2C0579F900EC924A /* SampleTableViewCell.swift */; };
+		D4228C6E2C0579F900EC924A /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4228C6C2C0579F900EC924A /* SampleTableViewCell.xib */; };
+		D4228C712C05A1B400EC924A /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C702C05A1B400EC924A /* TravelModel.swift */; };
+		D4228C7B2C06B22800EC924A /* BrownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C7A2C06B22800EC924A /* BrownViewController.swift */; };
+		D4228C7D2C06CF0400EC924A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228C7C2C06CF0400EC924A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		D4228C612C0563AA00EC924A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D4228C632C0563B400EC924A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D4228C652C0563BB00EC924A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D4228C682C0565B300EC924A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D4228C6B2C0579F900EC924A /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		D4228C6C2C0579F900EC924A /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		D4228C702C05A1B400EC924A /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		D4228C7A2C06B22800EC924A /* BrownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownViewController.swift; sourceTree = "<group>"; };
+		D4228C7C2C06CF0400EC924A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +82,14 @@
 			children = (
 				D4228C442C0555A200EC924A /* AppDelegate.swift */,
 				D4228C462C0555A200EC924A /* SceneDelegate.swift */,
-				D4228C482C0555A200EC924A /* ViewController.swift */,
 				D4228C4A2C0555A200EC924A /* Main.storyboard */,
+				D4228C482C0555A200EC924A /* ViewController.swift */,
+				D4228C6A2C0579A100EC924A /* Cell */,
 				D4228C5E2C05632300EC924A /* Home */,
 				D4228C5F2C05635C00EC924A /* Search */,
 				D4228C602C05636100EC924A /* Settings */,
+				D4228C672C05657B00EC924A /* Extensions */,
+				D4228C6F2C05A16300EC924A /* Dummy */,
 				D4228C4D2C0555A300EC924A /* Assets.xcassets */,
 				D4228C4F2C0555A300EC924A /* LaunchScreen.storyboard */,
 				D4228C522C0555A300EC924A /* Info.plist */,
@@ -87,6 +102,7 @@
 			children = (
 				D4228C582C05602700EC924A /* Home.storyboard */,
 				D4228C612C0563AA00EC924A /* HomeViewController.swift */,
+				D4228C7C2C06CF0400EC924A /* DetailViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -105,8 +121,34 @@
 			children = (
 				D4228C5C2C05603700EC924A /* Settings.storyboard */,
 				D4228C652C0563BB00EC924A /* SettingsViewController.swift */,
+				D4228C7A2C06B22800EC924A /* BrownViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		D4228C672C05657B00EC924A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4228C682C0565B300EC924A /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D4228C6A2C0579A100EC924A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D4228C6C2C0579F900EC924A /* SampleTableViewCell.xib */,
+				D4228C6B2C0579F900EC924A /* SampleTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D4228C6F2C05A16300EC924A /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				D4228C702C05A1B400EC924A /* TravelModel.swift */,
+			);
+			path = Dummy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4228C4E2C0555A300EC924A /* Assets.xcassets in Resources */,
+				D4228C6E2C0579F900EC924A /* SampleTableViewCell.xib in Resources */,
 				D4228C512C0555A300EC924A /* Base in Resources */,
 				D4228C4C2C0555A200EC924A /* Base in Resources */,
 				D4228C5D2C05603700EC924A /* Settings.storyboard in Resources */,
@@ -183,10 +226,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4228C7D2C06CF0400EC924A /* DetailViewController.swift in Sources */,
 				D4228C642C0563B400EC924A /* SearchViewController.swift in Sources */,
+				D4228C7B2C06B22800EC924A /* BrownViewController.swift in Sources */,
+				D4228C6D2C0579F900EC924A /* SampleTableViewCell.swift in Sources */,
 				D4228C492C0555A200EC924A /* ViewController.swift in Sources */,
+				D4228C712C05A1B400EC924A /* TravelModel.swift in Sources */,
 				D4228C452C0555A200EC924A /* AppDelegate.swift in Sources */,
 				D4228C472C0555A200EC924A /* SceneDelegate.swift in Sources */,
+				D4228C692C0565B300EC924A /* UIViewController+Extension.swift in Sources */,
 				D4228C622C0563AA00EC924A /* HomeViewController.swift in Sources */,
 				D4228C662C0563BB00EC924A /* SettingsViewController.swift in Sources */,
 			);

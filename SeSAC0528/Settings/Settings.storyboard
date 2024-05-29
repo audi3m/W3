@@ -16,18 +16,135 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIw-e2-RtS">
+                                <rect key="frame" x="30" y="89" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YpH-Ha-l4Z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present ( Modal )"/>
+                                <connections>
+                                    <action selector="presentModal:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DZw-Fg-Eok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plq-fk-eK6">
+                                <rect key="frame" x="30" y="169" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zUX-X8-iGw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present - fullScreen ( Modal )"/>
+                                <connections>
+                                    <action selector="presentFullScreenModal:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uR5-2x-O8F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0L-DF-9M4">
+                                <rect key="frame" x="30" y="249" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1CI-eA-QdN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present - navigation ( Modal )"/>
+                                <connections>
+                                    <action selector="presentNavigationModal:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sAk-Ke-Rjr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-wt-dWG">
+                                <rect key="frame" x="30" y="329" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vic-PZ-v64"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push ( Show )"/>
+                                <connections>
+                                    <action selector="pushModal:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GYS-ms-6gC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="plq-fk-eK6" firstAttribute="top" secondItem="RIw-e2-RtS" secondAttribute="bottom" constant="30" id="2UR-bc-3PU"/>
+                            <constraint firstItem="RIw-e2-RtS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="8EL-SS-mAM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CAk-wt-dWG" secondAttribute="trailing" constant="30" id="B8h-KH-636"/>
+                            <constraint firstItem="CAk-wt-dWG" firstAttribute="top" secondItem="V0L-DF-9M4" secondAttribute="bottom" constant="30" id="Ivh-lz-AeS"/>
+                            <constraint firstItem="plq-fk-eK6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="LNf-PO-tSC"/>
+                            <constraint firstItem="RIw-e2-RtS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="RAo-rT-noL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RIw-e2-RtS" secondAttribute="trailing" constant="30" id="RWP-Dv-BiS"/>
+                            <constraint firstItem="V0L-DF-9M4" firstAttribute="top" secondItem="plq-fk-eK6" secondAttribute="bottom" constant="30" id="SjQ-wo-8ux"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="plq-fk-eK6" secondAttribute="trailing" constant="30" id="c4I-lf-5Li"/>
+                            <constraint firstItem="CAk-wt-dWG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="e17-il-i2q"/>
+                            <constraint firstItem="V0L-DF-9M4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="eOc-tV-vef"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V0L-DF-9M4" secondAttribute="trailing" constant="30" id="fbM-zg-Ohi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="91" y="-34"/>
         </scene>
+        <!--Brown View Controller-->
+        <scene sceneID="LCN-1z-MFm">
+            <objects>
+                <viewController storyboardIdentifier="BrownViewController" id="eri-9P-WmJ" customClass="BrownViewController" customModule="SeSAC0528" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="prV-A1-9eJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06f-Hj-Vl5">
+                                <rect key="frame" x="30" y="89" width="333" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NoD-2y-hIa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dismiss">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissButtonClicked:" destination="eri-9P-WmJ" eventType="touchUpInside" id="jGM-Ff-qVK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gaj-k6-y3M">
+                                <rect key="frame" x="30" y="169" width="333" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="84f-rZ-WAG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pop">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="popButtonClicked:" destination="eri-9P-WmJ" eventType="touchUpInside" id="ehR-aO-x8B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u7g-f5-sqW"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="Gaj-k6-y3M" firstAttribute="leading" secondItem="u7g-f5-sqW" secondAttribute="leading" constant="30" id="Fju-M3-lzT"/>
+                            <constraint firstItem="Gaj-k6-y3M" firstAttribute="top" secondItem="06f-Hj-Vl5" secondAttribute="bottom" constant="30" id="KEh-6s-57R"/>
+                            <constraint firstItem="u7g-f5-sqW" firstAttribute="trailing" secondItem="Gaj-k6-y3M" secondAttribute="trailing" constant="30" id="N5G-Qu-PXl"/>
+                            <constraint firstItem="u7g-f5-sqW" firstAttribute="trailing" secondItem="06f-Hj-Vl5" secondAttribute="trailing" constant="30" id="WHs-oz-q6k"/>
+                            <constraint firstItem="06f-Hj-Vl5" firstAttribute="top" secondItem="u7g-f5-sqW" secondAttribute="top" constant="30" id="euf-4F-7HJ"/>
+                            <constraint firstItem="06f-Hj-Vl5" firstAttribute="leading" secondItem="u7g-f5-sqW" secondAttribute="leading" constant="30" id="ozR-SW-7RW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w65-MX-uwl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iw4-8b-YF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="-35"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
